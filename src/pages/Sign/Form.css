@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background: #e6d49d !important;
+  color: #614936 !important;
+}
+.image-text {
+  top: 20%;
+  left: 10%;
+  color: #fff;
+}
+.image-text p {
+  font-size: 1.25rem;
+}
+.image-text p span {
+  color: #ef0101;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+button {
+  background: #423224 !important;
+  color: #fff !important;
+}
+.form {
+  max-width: 500px;
+}
+h4 {
+  margin: 0 auto;
+}
