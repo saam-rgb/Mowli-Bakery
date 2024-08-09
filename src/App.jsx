@@ -7,13 +7,14 @@ import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./pages/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route element={<Navbar />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
           <Route path="/" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="products" element={<Products />} />
           <Route path="cart" element={<Cart />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
