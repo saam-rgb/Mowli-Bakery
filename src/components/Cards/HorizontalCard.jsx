@@ -1,10 +1,10 @@
 import React from "react";
-import menu from "../../pages/Products/products";
 
-export const Cards = ({ cart, setCart }) => {
+const HorizontalCard = ({ cart, setCart }) => {
+  const removeDish = (props) => {};
   return (
     <div className="card-div m-5 row d-flex justify-content-center">
-      {menu.map((dish, index) => (
+      {cart?.map((dish, index) => (
         <div className="card  mb-4 mx-4 col-md-3" key={index}>
           <img
             src={dish.image}
@@ -15,20 +15,19 @@ export const Cards = ({ cart, setCart }) => {
           <div className="card-body">
             <h5 className="card-title">{dish.title}</h5>
             <p className="card-text">{dish.description}</p>
-            {console.log(dish.title)}
-            {console.log(cart)}
-            <button
+            <a
+              href="#"
               className="btn btn-primary w-100"
-              onClick={() => setCart([...cart, dish])}>
+              onClick={() => {
+                removeDish(dish);
+              }}>
               Add to Cart
-            </button>
-            {console.log(cart)}
+            </a>
           </div>
         </div>
       ))}
-      {console.log(cart)}
     </div>
   );
 };
 
-// export default Cards;
+export default HorizontalCard;

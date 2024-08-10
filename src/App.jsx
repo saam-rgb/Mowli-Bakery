@@ -8,12 +8,15 @@ import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
+import { Cards } from "./components/Cards/Cards";
+import { useState } from "react";
+import HorizontalCard from "./components/Cards/HorizontalCard";
 
 function App() {
+  const [cart, setCart] = useState([]);
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
@@ -21,8 +24,9 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
           <Route path="cart" element={<Cart />} />
+          <Route element={<Cards cart={cart} setCart={setCart} />} />
+          <Route element={<HorizontalCard cart={cart} setCart={setCart} />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );

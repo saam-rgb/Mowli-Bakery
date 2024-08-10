@@ -1,39 +1,43 @@
 import React from "react";
 import { locations, hours } from "./footerData";
 
-const Footer = ({ location }) => {
+const Footer = () => {
   return (
-    <div>
+    <footer className="fixed-sticky">
       <div className="row p-5">
-        <div className="hours col-md-2 mx-3">
+        <div className="hours col-md-2 ">
           <h5>HOURS</h5>
+          {hours.map((hour, index) => (
+            <div key={index}>
+              <p className="fw-bold">{hour.title}</p>
+              <p>{hour.days}</p>
+              <p>{hour.time}</p>
+            </div>
+          ))}
         </div>
         <div className="locations col-md-9">
           <h5>LOCATIONS</h5>
 
-          {locations.map((location) => {
-            <div className="col-md-3">
-              <div className="area">
-                <p>{location.area}</p>
-                <p>{location.landmark}</p>
-                <p>{console.log(location.area)}</p>
-                <p>{console.log(location.landmark)}</p>
-                <p>{console.log(location.address)}</p>
-                <p>{console.log(location.phone)}</p>
-                <p>{console.log(location.landline)}</p>
+          <div className="row">
+            {locations.map((location, index) => (
+              <div className="col-md-4" key={index}>
+                <div className="">
+                  <p>{location.area}</p>
+                  <p>{location.landmark}</p>
+                </div>
+                <div className="area">
+                  <p>{location.address}</p>
+                </div>
+                <div className="phone d-flex gap-3">
+                  <p>Phone: {location.phone}</p>
+                  <p>Landline: {location.landline}</p>
+                </div>
               </div>
-              <div className="area">
-                <p>{location.address}</p>
-              </div>
-              <div className="phone">
-                <p>{location.phone}</p>
-                <p>{location.landline}</p>
-              </div>
-            </div>;
-          })}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

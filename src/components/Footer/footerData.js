@@ -24,13 +24,13 @@ export const locations = [
 
 export const hours = [
   {
-    title: "OPEN",
-    days: "Wednesday - Sunday",
-    time: "7am - 6pm",
-  },
-  {
     title: "CLOSED",
     days: "Monday & Tuesday",
     time: false,
+  },
+  {
+    title: "OPEN",
+    days: "Wednesday - Sunday",
+    time: "7am - 6pm",
   },
 ];
