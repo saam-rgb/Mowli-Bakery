@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import SignUp from "./pages/Sign/SignUp";
 import Login from "./pages/Sign/Login";
 import About from "./pages/About/About";
-import Products from "./pages/Products/Products";
+import Products from "./pages/Products/Products.jsx";
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
@@ -26,6 +26,7 @@ function App() {
           <Route path="cart" element={<Cart />} />
           <Route element={<Cards cart={cart} setCart={setCart} />} />
           <Route element={<HorizontalCard cart={cart} setCart={setCart} />} />
+          <Route path="/products/${category}/${product_name}"></Route>
         </Routes>
       </BrowserRouter>
     </>

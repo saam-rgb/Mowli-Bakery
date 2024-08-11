@@ -1,12 +1,13 @@
 import React from "react";
 import { locations, hours } from "./footerData";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="fixed-sticky">
+    <footer className="fixed-sticky bottom-0">
       <div className="row p-5">
         <div className="hours col-md-2 ">
-          <h5>HOURS</h5>
+          <h5 className="mb-4">HOURS</h5>
           {hours.map((hour, index) => (
             <div key={index}>
               <p className="fw-bold">{hour.title}</p>
@@ -16,13 +17,15 @@ const Footer = () => {
           ))}
         </div>
         <div className="locations col-md-9">
-          <h5>LOCATIONS</h5>
+          <h5 className="mb-4">LOCATIONS</h5>
 
           <div className="row">
             {locations.map((location, index) => (
               <div className="col-md-4" key={index}>
                 <div className="">
-                  <p>{location.area}</p>
+                  <p>
+                    <strong>{location.area}</strong>
+                  </p>
                   <p>{location.landmark}</p>
                 </div>
                 <div className="area">

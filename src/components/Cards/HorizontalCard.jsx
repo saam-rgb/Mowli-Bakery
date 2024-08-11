@@ -5,7 +5,7 @@ const HorizontalCard = ({ cart, setCart }) => {
   return (
     <div className="card-div m-5 row d-flex justify-content-center">
       {cart?.map((dish, index) => (
-        <div className="card  mb-4 mx-4 col-md-3" key={index}>
+        <div className="card  mb-4 mx-4 col-md-3 d-flex" key={index}>
           <img
             src={dish.image}
             className="card-img-top object-fit-fill"
