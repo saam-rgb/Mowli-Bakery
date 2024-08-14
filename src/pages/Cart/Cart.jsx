@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import HorizontalCard from "../../components/Cards/HorizontalCard";
 
-const Cart = () => {
+const Cart = ({ cart, setCart }) => {
   return (
-    <div>
+    <div id="cart">
       <Navbar />
-      <HorizontalCard />
+      <HorizontalCard cart={cart} setCart={setCart} />
     </div>
   );
 };

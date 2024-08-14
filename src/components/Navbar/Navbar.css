@@ -1,6 +1,7 @@
 .navbar {
   background: #e6d49d !important;
   color: #fff;
+  /* position: sticky !important; */
 }
 .navbar-nav {
   color: #fff !important;

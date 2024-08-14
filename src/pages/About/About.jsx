@@ -4,14 +4,14 @@ import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <Navbar />
-      <div className="about row p-4">
-        <div className="col-md-6 ">
-          <h1>
+      <div className=" row p-4">
+        <div className="col-md-6 p-4">
+          <h1 className="mb-4">
             <span>Simply the</span> BEST BAKERY
           </h1>
-          <p>
+          <p className="content">
             First opened in West Seattle where the historic Blake’s Bakery once
             stood, William and Heather Leaman continue to make history daily
             with one-of-a-kind creations. With over 20 years experience in
@@ -31,9 +31,10 @@ const About = () => {
             rating of 28 out of 30 points.
           </p>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 p-4">
           <img
-            src="https://instagram.fmaa2-3.fna.fbcdn.net/v/t51.29350-15/279964698_362724699017220_2973965273240042884_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE3OTkuc2RyLmYyOTM1MCJ9&_nc_ht=instagram.fmaa2-3.fna.fbcdn.net&_nc_cat=100&_nc_ohc=0L_aYXhF7J4Q7kNvgFlcFFg&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MjgzMzE4NzU1Nzk0NzY4NjM2Mg%3D%3D.2-ccb7-5&oh=00_AYA81juuI7cWoQOegJtGkoGa0pL4DHolLkVPAW7vSv7g7g&oe=66BE45C1&_nc_sid=8f1549"
+            className="p-2"
+            src="https://t3.ftcdn.net/jpg/01/96/46/58/360_F_196465845_KCAF1iAAlLmQo5wt8ZR6uczIyQkZBoDM.jpg"
             alt="Allwin_Raj"
           />
         </div>

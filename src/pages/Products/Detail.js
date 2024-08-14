@@ -1,4 +1,4 @@
-const menu = [
+const Detail = [
   {
     id: 1,
     image:
@@ -400,4 +400,45 @@ const menu = [
   },
 ];
 
-export default menu;
+export const Specials = [
+  {
+    id: 1,
+    image:
+      "https://www.dinneratthezoo.com/wp-content/uploads/2015/07/chocolate-coconut-cake-2.jpg",
+    title: "Chocolate and Coconut Slice",
+    description:
+      "Indulge in the Richness of Chocolate and Coconut in Every Bite",
+    category: "cheese",
+    price: 150,
+  },
+  {
+    id: 2,
+    image:
+      "https://pfalzgraf.de/fileadmin/user_upload/Produkte/Blechkuchen/465_kirsch_streusel_blech_kuchen_totale.jpg",
+    title: "Cherry Butter Crumble Slice",
+    description: "Enjoy the Sweetness of Cherries Paired with Buttery Crumbles",
+    category: "cheese",
+    price: 150,
+  },
+  {
+    id: 3,
+    image:
+      "https://wtk-live-public.s3.ap-southeast-2.amazonaws.com/public/Uploads/CHERRY-SLICE-9411-1__FillMaxWzcyMCw3MjBd.jpg",
+    title: "Chocolate and Cherry Slice",
+    description:
+      "Satisfy Your Cravings with the Perfect Blend of Chocolate and Cherries",
+    category: "cheese",
+    price: 150,
+  },
+  {
+    id: 4,
+    image:
+      "https://kitchen335co.com/wp-content/uploads/2023/03/fudgy-brownies-blog-1-of-2.jpg",
+    title: "Brownie",
+    description: "Delight in the Richness of This Classic Chocolate Treat",
+    category: "cheese",
+    price: 150,
+  },
+];
+
+export default Detail;

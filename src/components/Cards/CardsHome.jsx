@@ -1,24 +1,24 @@
 import React from "react";
-import menu from "../../pages/Products/Detail";
+import { Specials } from "../../pages/Products/Detail";
 import "./Cards.css";
 
-export const Cards = ({ cart, setCart }) => {
+export const CardsHome = ({ cart, setCart }) => {
   return (
-    <div className="card-container px-5">
-      <h2 className="py-4 ps-4">Cakes & Pastries</h2>
-      <div className="card-div  row d-flex justify-content-center">
-        {menu.map((dish, index) => (
-          <div className=" mb-4 mx-4 col-md-3" key={index}>
+    <div className="card-container px-2">
+      <h2 className="py-4 ps-4">Specials</h2>
+      <div className="  row d-flex justify-content-center">
+        {Specials.map((dish, index) => (
+          <div className=" mb-4 mx-4 col-md-2 col-sm-6 " key={index}>
             <img
               src={dish.image}
               className="card-img-top object-fit-cover mb-3"
               alt={dish.title}
-              width="100%"
-              height="250px"
+              width="25%"
+              height="150px"
             />
             <div className="card-body">
               <h5 className="card-title mb-2">{dish.title}</h5>
-              <p className="card-text mb-2">{dish.description}</p>
+
               <h4 className="card-text mb-2">₹ {dish.price}</h4>
               {console.log(dish.title)}
               {console.log(cart)}

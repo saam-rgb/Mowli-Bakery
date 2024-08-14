@@ -1,3 +1,18 @@
-.card-div {
+.cards {
+  min-width: 100vh;
+}
+.card-container {
   background-color: #e6d49d;
+}
+.card-b-css {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn {
+  background: #614936 !important;
+  color: #fff !important;
+}
+.card-home-div {
+  width: 25% !important;
 }

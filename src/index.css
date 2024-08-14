@@ -3,3 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+#product {
+  overflow: hidden;
+}
+#cart {
+  min-height: 100vh;
+  background-color: #e6d49d;
+  overflow: hidden;
+}
+#about {
+  background: #e6d49d;
+  overflow: hidden;
+}
+#home{
+  background: #e6d49d;
+  overflow: hidden;
+}
+.content {
+  font-size: 1.25rem;
+}
